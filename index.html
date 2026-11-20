@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Ángel Polanía | Portafolio</title>
+    <meta name="description" content="Tecnólogo en Análisis y Desarrollo de Software (SENA). Interfaces web, bases de datos y soporte técnico. Disponible para etapa productiva en Bogotá.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Miguel Ángel Polanía | Portafolio">
+    <meta property="og:description" content="Interfaces web, bases de datos y soporte técnico. Disponible para etapa productiva en Bogotá.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navTop" data-bs-root-margin="-30% 0px -60% 0px" tabindex="0">
+
+<nav class="navbar navbar-expand-lg fixed-top nav-main" id="navTop">
+    <div class="container">
+        <a class="navbar-brand" href="#inicio">MP</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMovil" aria-label="Abrir menú">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav ms-auto d-none d-lg-flex flex-row gap-3">
+            <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#hacer">Lo que construyo</a></li>
+            <li class="nav-item"><a class="nav-link" href="#zyra">Zyra</a></li>
+            <li class="nav-item"><a class="nav-link" href="#blandas">Cómo trabajo</a></li>
+            <li class="nav-item"><a class="nav-link" href="#rumbo">Hacia dónde voy</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="menuMovil">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menú</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item list-group-item-action" data-bs-dismiss="offcanvas" href="#perfil">Perfil</a>
+            <a class="list-group-item list-group-item-action" data-bs-dismiss="offcanvas" href="#hacer">Lo que construyo</a>
+            <a class="list-group-item list-group-item-action" data-bs-dismiss="offcanvas" href="#zyra">Zyra</a>
+            <a class="list-group-item list-group-item-action" data-bs-dismiss="offcanvas" href="#blandas">Cómo trabajo</a>
+            <a class="list-group-item list-group-item-action" data-bs-dismiss="offcanvas" href="#rumbo">Hacia dónde voy</a>
+            <a class="list-group-item list-group-item-action" data-bs-dismiss="offcanvas" href="#contacto">Contacto</a>
+        </div>
+    </div>
+</div>
+
+<!-- HERO -->
+<header class="hero" id="inicio">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+                <p class="hero-kicker mb-3">Aprendiz SENA, Tecnólogo en Análisis y Desarrollo de Software</p>
+                <h1 class="hero-name">Miguel Ángel Polanía</h1>
+                <p class="hero-lead">Diseño interfaces que se adaptan a cualquier pantalla y cuido los datos que las hacen funcionar. También sé arreglar el computador donde corren.</p>
+                <div class="d-flex flex-wrap gap-2">
+                    <a href="#zyra" class="btn btn-gold btn-lg">Ver mi proyecto</a>
+                    <a href="#contacto" class="btn btn-outline-light btn-lg">Escríbeme</a>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <img src="img/foto.png" class="foto mb-4" width="200" height="200" alt="Foto de Miguel Ángel Polanía">
+<pre class="code" aria-label="Resumen en forma de código CSS"><span class="tk-sel">.miguel</span> {
+    <span class="tk-prop">rol</span>: <span class="tk-val">"analista de base de datos"</span>;
+    <span class="tk-prop">interfaz</span>: <span class="tk-val">responsive</span>;
+    <span class="tk-prop">equipo</span>: <span class="tk-val">si</span>;
+    <span class="tk-prop">etapa-productiva</span>: <span class="tk-val">disponible</span>;
+}
+<span class="tk-at">@media</span> (min-width: 768px) {
+    <span class="tk-sel">.miguel</span> { <span class="tk-prop">ganas</span>: <span class="tk-val">más</span>; }
+}</pre>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- PERFIL -->
+    <section id="perfil" class="seccion">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h2>Perfil</h2>
+                    <p>Estoy en cuarto trimestre del Tecnólogo en ADSO. Desarrollo interfaces con HTML, CSS, JavaScript y Bootstrap, y trabajo con bases de datos relacionales y NoSQL.</p>
+                    <p>Vengo del Técnico en Sistemas, así que diagnostico fallas, instalo y mantengo equipos. Esa mezcla me deja entender el producto completo, desde lo que ve la persona hasta lo que pasa debajo.</p>
+                </div>
+                <div class="col-lg-6">
+                    <dl class="row datos mb-0">
+                        <dt class="col-sm-4">Formación</dt><dd class="col-sm-8">Tecnólogo en ADSO, SENA (en curso)</dd>
+                        <dt class="col-sm-4">Antes</dt><dd class="col-sm-8">Bachiller Académico con Técnico en Sistemas, 2025</dd>
+                        <dt class="col-sm-4">Ciudad</dt><dd class="col-sm-8">Bogotá D.C., Colombia</dd>
+                        <dt class="col-sm-4">Idiomas</dt><dd class="col-sm-8">Español nativo, inglés A2</dd>
+                        <dt class="col-sm-4">Busco</dt><dd class="col-sm-8">Contrato de aprendizaje en una empresa de software, soporte o sistemas</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LO QUE CONSTRUYO -->
+    <section id="hacer" class="seccion seccion-alt">
+        <div class="container">
+            <h2>Lo que construyo</h2>
+            <p class="intro">Un sitio es como un edificio: se ve por fuera y se sostiene por dentro. Trabajo en los tres pisos.</p>
+            <div class="pisos">
+                <div class="piso">
+                    <div class="piso-nombre"><i class="bi bi-window-stack"></i> Lo que se ve</div>
+                    <div class="piso-detalle"><p>Interfaces con grid, componentes de Bootstrap y media queries, para que se vean bien del celular al escritorio.</p>
+                        <span class="badge text-bg-dark">HTML</span> <span class="badge text-bg-dark">CSS</span> <span class="badge text-bg-dark">JavaScript</span> <span class="badge text-bg-dark">Bootstrap 5</span></div>
+                </div>
+                <div class="piso">
+                    <div class="piso-nombre"><i class="bi bi-database"></i> Lo que guarda</div>
+                    <div class="piso-detalle"><p>Diseño y consulto bases de datos relacionales y documentales. En mi proyecto formativo soy el analista de base de datos.</p>
+                        <span class="badge text-bg-dark">MySQL</span> <span class="badge text-bg-dark">PostgreSQL</span> <span class="badge text-bg-dark">MongoDB</span></div>
+                </div>
+                <div class="piso">
+                    <div class="piso-nombre"><i class="bi bi-pc-display"></i> Lo que lo sostiene</div>
+                    <div class="piso-detalle"><p>Mantenimiento preventivo y correctivo, instalación de Windows, controladores y programas. Versiono mi trabajo con Git y GitHub.</p>
+                        <span class="badge text-bg-dark">Windows</span> <span class="badge text-bg-dark">Hardware</span> <span class="badge text-bg-dark">Git y GitHub</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ZYRA -->
+    <section id="zyra" class="seccion zyra">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-7">
+                    <h2>Zyra</h2>
+                    <p class="lead">Una aplicación web que conversa con la persona y le brinda apoyo emocional usando la IA de Google Gemini. Es mi proyecto formativo del SENA y sigue en desarrollo.</p>
+                    <ul class="lista-zyra">
+                        <li>Soy el analista de base de datos: manejo la información del proyecto en MongoDB.</li>
+                        <li>Diseñé gran parte de la interfaz visual.</li>
+                        <li>Propuse ideas y funcionalidades para el producto.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-5">
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge text-bg-light">HTML</span><span class="badge text-bg-light">CSS</span><span class="badge text-bg-light">JavaScript</span><span class="badge text-bg-light">MongoDB</span><span class="badge text-bg-light">API de Gemini</span>
+                    </div>
+                    <p class="small mt-3 mb-0 opacity-75">Proyecto en equipo. Puedo mostrar la interfaz y el modelo de datos en una conversación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CÓMO TRABAJO -->
+    <section id="blandas" class="seccion">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <h2>Cómo trabajo</h2>
+                    <p>Las habilidades blandas se prueban con ejemplos. Abre cada una para ver dónde las he usado.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="accordion" id="accBlandas">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#b1">Creatividad</button></h3>
+                            <div id="b1" class="accordion-collapse collapse show" data-bs-parent="#accBlandas"><div class="accordion-body">En Zyra propuse funcionalidades nuevas y armé gran parte de la interfaz. Me gusta que lo técnico también se vea cuidado.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b2">Paciencia para diagnosticar</button></h3>
+                            <div id="b2" class="accordion-collapse collapse" data-bs-parent="#accBlandas"><div class="accordion-body">En soporte técnico aprendí a no adivinar: probar, descartar y seguir hasta encontrar la causa real de la falla.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b3">Trabajo en equipo</button></h3>
+                            <div id="b3" class="accordion-collapse collapse" data-bs-parent="#accBlandas"><div class="accordion-body">Mi proyecto de grado fue en un equipo de 3 personas, atendiendo computadores de la comunidad sin ánimo de lucro. Zyra también es un proyecto de equipo, con un rol claro para cada uno.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#b4">Ganas de aprender</button></h3>
+                            <div id="b4" class="accordion-collapse collapse" data-bs-parent="#accBlandas"><div class="accordion-body">Cada trimestre sumo una herramienta nueva: de HTML y CSS pasé a bases de datos, Git y APIs de IA. Mi inglés está en A2 y lo sigo practicando.</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HACIA DÓNDE VOY -->
+    <section id="rumbo" class="seccion seccion-alt">
+        <div class="container">
+            <h2>Hacia dónde voy</h2>
+            <p class="intro">Tres caminos técnicos que quiero explorar a partir de lo que ya sé hacer.</p>
+            <div class="row g-4">
+                <div class="col-md-4"><div class="ruta"><i class="bi bi-layout-text-window-reverse"></i><h3>Desarrollo front-end</h3><p>Seguir profundizando en JavaScript y en interfaces responsive con Bootstrap.</p></div></div>
+                <div class="col-md-4"><div class="ruta"><i class="bi bi-hdd-stack"></i><h3>Datos y bases de datos</h3><p>Crecer como analista de bases de datos con MySQL, PostgreSQL y MongoDB.</p></div></div>
+                <div class="col-md-4"><div class="ruta"><i class="bi bi-tools"></i><h3>Soporte y sistemas</h3><p>Aprovechar mi base de técnico para dar soporte a equipos y usuarios.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="seccion contacto">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h2>Contacto</h2>
+                    <p class="lead">Busco mi etapa productiva en Bogotá. Si tu equipo necesita a alguien que construya, pregunte y arregle, hablemos.</p>
+                    <div class="d-grid gap-2 d-sm-flex">
+                        <a class="btn btn-gold btn-lg" href="mailto:miguelpolania828@gmail.com"><i class="bi bi-envelope"></i> Enviar correo</a>
+                        <a class="btn btn-outline-light btn-lg" href="https://github.com/miguelpolania" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+                        <a class="btn btn-outline-light btn-lg" href="https://linkedin.com/in/miguelpolania-0211753b0" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="h5">Comparte este portafolio</h3>
+                    <div class="d-flex flex-wrap gap-2">
+                        <button class="btn btn-light" type="button" id="btnCopiar"><i class="bi bi-link-45deg"></i> Copiar enlace</button>
+                        <a class="btn btn-light" id="shWa" href="#" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                        <a class="btn btn-light" id="shIn" href="#" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="pie text-center small py-3">Miguel Ángel Polanía, Bogotá D.C. Hecho a mano con HTML, CSS y Bootstrap 5.</footer>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="toastCopiado" class="toast text-bg-dark border-0" role="status" aria-live="polite" aria-atomic="true">
+        <div class="toast-body">Enlace copiado.</div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

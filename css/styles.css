@@ -1,0 +1,100 @@
+:root {
+    --vino: #4a0f1f;
+    --vino-2: #2e0913;
+    --oro: #d6ad55;
+    --rosa: #a32a55;
+    --papel: #f7f4f3;
+    --papel-2: #ece6e5;
+    --tinta: #241519;
+    --bs-body-font-family: 'Figtree', system-ui, sans-serif;
+    --bs-body-color: var(--tinta);
+    --bs-body-bg: var(--papel);
+}
+html { scroll-padding-top: 72px; }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+
+h1, h2, h3, .navbar-brand { font-family: 'Bricolage Grotesque', sans-serif; }
+h2 { font-weight: 800; font-size: clamp(1.9rem, 4vw, 2.6rem); letter-spacing: -.02em; margin-bottom: 1rem; }
+p { max-width: 62ch; }
+
+/* NAV */
+.nav-main { background: rgba(74, 15, 31, .96); }
+.nav-main .navbar-brand { color: var(--oro); font-weight: 800; font-size: 1.5rem; }
+.nav-main .nav-link { color: #f1dfe3; font-size: .95rem; }
+.nav-main .nav-link:hover, .nav-main .nav-link.active { color: var(--oro); }
+.nav-main .navbar-toggler { border-color: rgba(214, 173, 85, .6); filter: invert(1); }
+
+/* HERO: papel cuadriculado, como un plano */
+.hero {
+    background-color: var(--vino);
+    background-image:
+        linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+    background-size: 32px 32px;
+    color: #fff;
+    padding: 8rem 0 5rem;
+}
+.hero-kicker { color: var(--oro); font-weight: 500; }
+.hero-name { font-weight: 800; font-size: clamp(2.8rem, 8vw, 5.5rem); line-height: .95; letter-spacing: -.03em; margin-bottom: 1.25rem; }
+.hero-lead { font-size: 1.2rem; color: #ead6da; margin-bottom: 1.75rem; }
+.btn-gold { background: var(--oro); color: var(--vino-2); font-weight: 600; border: 0; }
+.btn-gold:hover { background: #e4c176; color: var(--vino-2); }
+
+.code {
+    background: var(--vino-2);
+    border: 1px solid rgba(214, 173, 85, .35);
+    border-radius: .5rem;
+    color: #f3e8ea;
+    font-size: .88rem;
+    line-height: 1.7;
+    padding: 1.25rem;
+    margin: 0;
+    overflow-x: auto;
+}
+.tk-sel { color: var(--oro); }
+.tk-prop { color: #9ed3c2; }
+.tk-val { color: #f2a3bd; }
+.tk-at { color: #c9b6ff; }
+
+.foto { display: block; width: 200px; height: 200px; max-width: 100%; border-radius: 50%; }
+@media (max-width: 991.98px) { .foto { width: 160px; height: 160px; } }
+
+/* SECCIONES */
+.seccion { padding: 5rem 0; }
+.seccion-alt { background: var(--papel-2); }
+.intro { color: #5b474c; margin-bottom: 2rem; }
+.datos dt { color: var(--rosa); font-weight: 600; padding-top: .6rem; }
+.datos dd { padding-top: .6rem; border-top: 1px solid var(--papel-2); }
+@media (min-width: 576px) { .datos dt { border-top: 1px solid var(--papel-2); } }
+
+/* PISOS */
+.pisos { border: 2px solid var(--vino); border-radius: .25rem; background: var(--papel); }
+.piso { display: grid; grid-template-columns: 1fr; border-bottom: 2px solid var(--vino); }
+.piso:last-child { border-bottom: 0; }
+.piso-nombre { background: var(--vino); color: var(--oro); font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; padding: 1rem 1.25rem; display: flex; align-items: center; gap: .6rem; }
+.piso-detalle { padding: 1.25rem; }
+.piso-detalle p { margin-bottom: .75rem; }
+@media (min-width: 768px) {
+    .piso { grid-template-columns: 260px 1fr; }
+}
+
+/* ZYRA */
+.zyra { background: var(--vino-2); color: #fff; }
+.lista-zyra { padding-left: 1.1rem; }
+.lista-zyra li { margin-bottom: .5rem; }
+
+/* CÓMO TRABAJO */
+.accordion { --bs-accordion-active-bg: #f3dfe6; --bs-accordion-active-color: var(--vino); --bs-accordion-btn-focus-box-shadow: 0 0 0 .25rem rgba(163, 42, 85, .25); }
+.accordion-button { font-weight: 600; }
+
+/* RUTAS */
+.ruta { height: 100%; border-left: 4px solid var(--rosa); padding: .25rem 0 .25rem 1.25rem; }
+.ruta i { font-size: 1.8rem; color: var(--rosa); }
+.ruta h3 { font-size: 1.25rem; font-weight: 800; margin: .5rem 0; }
+
+/* CONTACTO */
+.contacto { background: var(--vino); color: #fff; }
+.pie { background: var(--vino-2); color: #cdb5bb; }
+.pie, .contacto p { max-width: none; }
+
+a:focus-visible, button:focus-visible { outline: 3px solid var(--oro); outline-offset: 2px; }
